@@ -1,6 +1,13 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+// import { example } from './data.js';
+import dataHP from './data/harrypotter/data.js';
 
-console.log(example, data);
+const cards = document.getElementById("cards");
+const characters = dataHP.characters;
+
+
+for(let i=0; i<characters.length; i++) {
+    const card =  document.createElement("div");
+    card.innerHTML = characters[i].name;
+    card.className = 'estilo-card';
+    cards.appendChild(card);
+}

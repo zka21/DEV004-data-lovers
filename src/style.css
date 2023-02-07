@@ -1,0 +1,14 @@
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px 80px;
+}
+
+.estilo-card { 
+    border: 1px solid tomato;
+    width: 170px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 1rem;
+}
