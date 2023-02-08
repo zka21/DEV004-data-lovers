@@ -192,6 +192,29 @@ export default {
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
     {
+      "id": 205,
+      "name": "Rubeus Hagrid",
+      "birth": "6 December 1928",
+      "death": null,
+      "species": "Half-Human/Half-Giant",
+      "ancestry": "Part-Human (Half-giant)",
+      "gender": "Male",
+      "hair_color": "Black",
+      "eye_color": "Black",
+      "wand": "16\", Oak, unknown core",
+      "patronus": "None",
+      "house": "Gryffindor",
+      "associated_groups": [
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Gryffindor",
+        "Order of the Phoenix",
+        "Hagrid family",
+        "Albus Dumbledore",
+        "Harry Potter"
+      ],
+      "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
       "id": 382,
       "name": "Severus Snape",
       "birth": "9 January 1960",
@@ -217,32 +240,6 @@ export default {
         "Death Eaters (defected)"
       ],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
-    },
-    {
-      "id": 258,
-      "name": "Remus Lupin",
-      "birth": "10 March, 1960",
-      "death": "2 May, 1998 (aged 38)",
-      "species": "Werewolf (formerly Human)",
-      "ancestry": "Half-blood",
-      "gender": "Male",
-      "hair_color": "Light brown flecked with grey",
-      "eye_color": "Green",
-      "wand": "10¼\", Cypress, unicorn hair",
-      "patronus": "Wolf",
-      "house": "Gryffindor",
-      "associated_groups": [
-        "Lupin family",
-        "Howell family",
-        "Tonks family",
-        "Potter family",
-        "Hogwarts School of Witchcraft and Wizardry",
-        "Gryffindor",
-        "Marauders",
-        "Order of the Phoenix",
-        "Advance Guard"
-      ],
-      "books_featured_in": [3, 4, 5, 6, 7]
     },
     {
       "id": 50,
@@ -305,6 +302,22 @@ export default {
       "house": "Malfoy family",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
+      "id": 727,
+      "name": "Dolores Umbridge",
+      "birth": "British Ministry of Magic (formerly)",
+      "death": null,
+      "species": "Human",
+      "ancestry": "Half-blood",
+      "gender": "Female",
+      "hair_color": "Mouse brown (formerly)",
+      "eye_color": null,
+      "wand": "8\", Birch, dragon heartstring (formerly)",
+      "patronus": "Persian cat",
+      "house": "Slytherin",
+      "associated_groups": [],
+      "books_featured_in": [5, 6, 7]
     },
     {
       "id": 312,

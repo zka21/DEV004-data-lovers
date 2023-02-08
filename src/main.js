@@ -2,7 +2,8 @@
 import dataHP from './data/harrypotter/data.js';
 
 const cards = document.getElementById("cards");
-const characters = dataHP.characters;
+const characters = dataHP.characters.slice(0,15);
+console.log(characters);
 
 
 for(let i=0; i<characters.length; i++) {
