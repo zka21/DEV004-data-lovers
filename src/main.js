@@ -34,8 +34,8 @@ function factoryCard(c) {
     cardInner.appendChild(cardFront);
     cardInner.appendChild(cardBack);
 
-    cardFront.appendChild(name);
     cardFront.appendChild(photo);
+    cardFront.appendChild(name);
 
     cardBack.appendChild(nameBack);
     cardBack.appendChild(birth);
