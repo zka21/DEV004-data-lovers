@@ -2,6 +2,7 @@ export default {
   characters: [
     {
       "id": 326,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/harry-potter_/4661804-1-esl-ES/Harry-Potter_.jpg?resize=980:*",
       "name": "Harry Potter",
       "birth": "31 July, 1980",
       "death": null,
@@ -32,6 +33,7 @@ export default {
     },
     {
       "id": 587,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/hermione-granger_/4661799-1-esl-ES/Hermione-Granger_.jpg?resize=980:*",
       "name": "Hermione Granger",
       "birth": "19 September, 1979",
       "death": null,
@@ -61,6 +63,7 @@ export default {
     },
     {
       "id": 476,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/ron-weasley_/4661779-1-esl-ES/Ron-Weasley_.jpg?resize=980:*",
       "name": "Ronald Weasley",
       "birth": "1 March, 1980",
       "death": null,
@@ -92,6 +95,7 @@ export default {
     },
     {
       "id": 743,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/ginny-weasley_/4661829-1-esl-ES/Ginny-Weasley_.jpg?resize=980:*",
       "name": "Ginny Weasley",
       "birth": "11 August, 1981",
       "death": null,
@@ -120,6 +124,7 @@ export default {
     },
     {
       "id": 267,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/draco-malfoy_/4661784-1-esl-ES/Draco-Malfoy_.jpg?resize=980:*",
       "name": "Draco Malfoy",
       "birth": "5 June, 1980",
       "death": null,
@@ -136,6 +141,7 @@ export default {
     },
     {
       "id": 756,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/albus-dumbledore_/4661774-1-esl-ES/Albus-Dumbledore_.jpg?resize=980:*",
       "name": "Albus Dumbledore",
       "birth": "Late August 1881",
       "death": "30 June, 1997 (aged 115)",
@@ -165,6 +171,7 @@ export default {
     },
     {
       "id": 644,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/minerva-mcgonagall_/4661789-1-esl-ES/Minerva-McGonagall_.jpg?resize=980:*",
       "name": "Minerva McGonagall",
       "birth": "4 October,",
       "death": null,
@@ -193,6 +200,7 @@ export default {
     },
     {
       "id": 205,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/rubeus-hagrid_/4661794-1-esl-ES/Rubeus-Hagrid_.jpg?resize=980:*",
       "name": "Rubeus Hagrid",
       "birth": "6 December 1928",
       "death": null,
@@ -216,6 +224,7 @@ export default {
     },
     {
       "id": 382,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/severus-snape_/4661809-1-esl-ES/Severus-Snape_.jpg?resize=980:*",
       "name": "Severus Snape",
       "birth": "9 January 1960",
       "death": "2 May 1998 (aged 38)",
@@ -243,6 +252,7 @@ export default {
     },
     {
       "id": 50,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/sirius-black_/4661904-1-esl-ES/Sirius-Black_.jpg?resize=980:*",
       "name": "Sirius Black",
       "birth": "3 November, 1959",
       "death": "18 June, 1996 (aged 36)",
@@ -266,6 +276,7 @@ export default {
     },
     {
       "id": 350,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/lord-voldemort_/4661988-1-esl-ES/Lord-Voldemort_.jpg?resize=980:*",
       "name": "Tom Riddle (Voldemort)",
       "birth": "31 December, 1926",
       "death": "2 May, 1998 (aged 71)",
@@ -289,6 +300,7 @@ export default {
     },
     {
       "id": 268,
+      "img":"https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/lucius-malfoy_/4661814-1-esl-ES/Lucius-Malfoy_.jpg?resize=980:*",
       "name": "Lucius Malfoy",
       "birth": "between 9 September 1953 and 8 September 1954",
       "death": null,
@@ -305,6 +317,7 @@ export default {
     },
     {
       "id": 727,
+      "img": "https://imengine.prod.srp.navigacloud.com/?uuid=5C37C728-1729-4248-A949-9A23C4FE440C&type=primary&q=72&width=1024",
       "name": "Dolores Umbridge",
       "birth": "British Ministry of Magic (formerly)",
       "death": null,
@@ -321,6 +334,7 @@ export default {
     },
     {
       "id": 312,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/peter-pettigrew_/4661939-1-esl-ES/Peter-Pettigrew_.jpg?resize=980:*",
       "name": "Peter Pettigrew",
       "birth": "between 1 September 1959 and 31 August 1960",
       "death": "Late March 1998 (aged 38 -39)",
@@ -347,6 +361,7 @@ export default {
     },
     {
       "id": 622,
+      "img": "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/media/imagenes/reportajes/los-personajes-clave-de-harry-potter/bellatrix-lestrange_/4663009-1-esl-ES/Bellatrix-Lestrange_.jpg?resize=980:*",
       "name": "Bellatrix Lestrange",
       "birth": "1951",
       "death": "2 May, 1998 (aged 46 - 47)",
