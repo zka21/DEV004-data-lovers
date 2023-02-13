@@ -15,3 +15,13 @@ import dataHP from './data/harrypotter/data.js'
 // export const anotherExample = () => {
 //   return 'OMG';
 // };
+/**const button = document.getElementById("botonseleccion");
+const contenido = document.getElementById("opciones");
+
+button.addEventListener("click", function() {
+  if (contenido.style.display === "none") {
+    contenido.style.display = "block";
+  } else {
+    contenido.style.display = "none";
+  }
+});/**/
