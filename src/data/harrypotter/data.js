@@ -135,7 +135,7 @@ export default {
       "eye_color": "Grey",
       "wand": "10\", Hawthorn, unicorn hair (formerly)",
       "patronus": "None",
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -311,7 +311,7 @@ export default {
       "eye_color": "Grey",
       "wand": "Elm and dragon heartstring (formerly)",
       "patronus": "None",
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -372,7 +372,7 @@ export default {
       "eye_color": null,
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
-      "house": "House of Black",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },
@@ -10149,7 +10149,7 @@ export default {
       "eye_color": null,
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
-      "house": "House of Black",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },

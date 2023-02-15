@@ -1,12 +1,30 @@
-// import { example } from './data.js';
-import dataHP from './data/harrypotter/data.js';
+import { allCharacters, filterCharactersByHouses } from "./data.js";
 
 const containerCards = document.getElementById("container-cards");
-const characters = dataHP.characters.slice(0,15);
+const selectForHouses = document.getElementById("selectForHouses");
+const characters = allCharacters();
 
 characters.forEach((character) => {
     factoryCard(character);
 });
+
+selectForHouses.addEventListener("change", (event) => {
+    deleteCards()
+    const charactersFiltered = filterCharactersByHouses(event.target.value);
+
+    charactersFiltered.forEach((character) => {
+        factoryCard(character);
+    });
+});
+
+function deleteCards() {
+    let child = containerCards.lastElementChild;
+
+    while(child) {
+        containerCards.removeChild(child);
+        child = containerCards.lastElementChild;
+    }
+}
 
 function factoryCard(c) {
     const card = document.createElement('div');
