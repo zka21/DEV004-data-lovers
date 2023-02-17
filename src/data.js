@@ -7,7 +7,7 @@ export const allCharacters = () => {
   return dataHP.characters.slice(0,15)
 }
 
-export const filterCharactersByHouses = (house) => {
+export const filterCharactersByHouses = (house, arraycharacters) => {
   /**
    * Objetivo: Filtrar los personajes que pertenezcan a cierta casa(g, h, s, r)
    * 1. ir uno a uno por todos los personajes
@@ -16,8 +16,8 @@ export const filterCharactersByHouses = (house) => {
    * 
    * Caso raro: si nos manda all debemos retornar todos los personajes
    */
-  const characters = allCharacters();
-  let characterFiltered = [];
+  const characters = arraycharacters;
+  const characterFiltered = [];
 
   if(house === 'all') {
     return allCharacters();
