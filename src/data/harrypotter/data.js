@@ -12438,72 +12438,6 @@ export default {
   ],
   spells: [
     {
-      "id": 44,
-      "name": "Cantis",
-      "other_name": null,
-      "pronunciation": "CAN-tiss",
-      "spell_type": "Jinx",
-      "description": "Causes the victim to burst uncontrollably into song.",
-      "mention": "Used by the Hogwarts professors to enchant suits of armour.",
-      "etymology": "Cantare is Latin for \"sing\".",
-      "note": null
-    },
-    {
-      "id": 39,
-      "name": "Bridge-conjuring spell",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Charm",
-      "description": "Conjure a bridge from thin air.",
-      "mention": "This spell was used by Ignotus, Antioch and Cadmus Peverell in The Tale of the Three Brothers to create a bridge over a treacherous river, a bridge upon which they met Death.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 281,
-      "name": "Teleportation Spell",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Spell",
-      "description": "Vanishes objects which then appear elsewhere.",
-      "mention": "In 1996, Albus Dumbledore  used this to transport Harry Potter's school supplies, clothes, and owl to the Burrow.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 169,
-      "name": "Leek Jinx",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Jinx",
-      "description": "Makes leeks sprout out of the target's ears.",
-      "mention": "Used by a fighting Gryffindor fourth year and sixth year Slytherin before a Quidditch match in 1992.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 138,
-      "name": "Homonculous Charm",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Charm",
-      "description": "Tracks the movements of human beings. The charm has a powerful effect in that it is not fooled by various methods of concealment and disguise, such as invisibility cloaks, the Polyjuice Potion or transformed Animagi.",
-      "mention": "This charm was used on Marauder's Map by James Potter, Sirius Black, Remus Lupin, and Peter Pettigrew after charting the grounds and halls of Hogwarts Castle in order to track the movements of everyone within the castle grounds.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 195,
-      "name": "Nebulus",
-      "other_name": null,
-      "pronunciation": "NEH-bu-lus",
-      "spell_type": "Charm",
-      "description": "Creates fog from the tip of the wand.",
-      "mention": "In 1927, Albus Dumbledore used this spell to conjure a fog in London to provide concealment for his meeting with Newton Scamander.",
-      "etymology": null,
-      "note": "This may be the incantation for the Ministry of Magic Fog."
-    },
-    {
       "id": 2,
       "name": "Accio",
       "other_name": "Summoning Charm",
@@ -12512,128 +12446,6 @@ export default {
       "description": "Summons an object towards the caster. It is able to summon objects in direct line of sight of the caster, as well as things out of view, by calling the object aloud after the incantation (unless the spell is casted nonverbally). This spell needs thought behind it, and the object must be clear in the casters mind before trying to summon it. The caster doesn't necessarily need to know the location of the target if they say the name of the object to be summoned, such as when Hermione Granger summoned some books from Dumbledore's office simply by saying \"Accio Horcrux books!\" while in Gryffindor Tower.",
       "mention": "Harry Potter summoned his broom to complete the first task of the Triwizard Tournament in 1994, and to summon the Portkey to escape Voldemort and the Death Eaters in the Little Hangleton Graveyard in 1995. Also, in the Battle of the Seven Potters Harry summoned Hagrid when he fell. Molly Weasley used it to get the twins' candy. The twins used it to summon their brooms from Dolores Umbridge's office",
       "etymology": "The Latin word accio means \"I call\" or \"I summon\".",
-      "note": null
-    },
-    {
-      "id": 193,
-      "name": "Mutatio Skullus",
-      "other_name": null,
-      "pronunciation": "myoo-TAY-toh SKULL-us",
-      "spell_type": "Hex",
-      "description": "Mutates the victim's head, causing them to grows extra heads.",
-      "mention": "Used by Ancient Egyptian wizards, as noted by Ron Weasley in 1993.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 50,
-      "name": "Cauldron to badger",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Transfiguration",
-      "description": "Transforms cauldrons into badgers.",
-      "mention": null,
-      "etymology": null,
-      "note": "This spell may be Badgering."
-    },
-    {
-      "id": 164,
-      "name": "Jelly-Fingers Curse",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Curse",
-      "description": "Causes target's fingers to become wobbly, making it uneasy for the victim to grasp objects.",
-      "mention": "After a June 1999 Pride of Portree/Appleby Arrows Quidditch game, the losing Seeker accused his opposite number of putting this curse on him as they both closed in on the Snitch.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 236,
-      "name": "Reparifarge",
-      "other_name": null,
-      "pronunciation": "reh-PAR-i-farj",
-      "spell_type": "Untransfiguration",
-      "description": "Used to reverse incomplete transformations.",
-      "mention": "Found in A Beginner's Guide to Transfiguration.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 49,
-      "name": "Cauldron to Sieve",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Transfiguration",
-      "description": "Transforms cauldrons into sieves.",
-      "mention": null,
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 202,
-      "name": "Orchideous",
-      "other_name": null,
-      "pronunciation": "or-KID-ee-us",
-      "spell_type": "Conjuration",
-      "description": "Conjures a bouquet of flowers.",
-      "mention": "Used in 1994 by Mr Ollivander to test Fleur Delacour's wand. Probably used non-verbally by Tom Riddle to present flowers to Mrs Smith.",
-      "etymology": "English orchid and Latin suffix -eous, \"of or bearing (the root word)\".",
-      "note": "A variation of this spell may have been used when Hermione Granger conjured a Christmas wreath to place on James and Lily Potter's graves in 1997."
-    },
-    {
-      "id": 69,
-      "name": "Deprimo",
-      "other_name": null,
-      "pronunciation": "deh-PREEM-oh",
-      "spell_type": "Charm",
-      "description": "Charm used to blast holes in the ground.",
-      "mention": "Hermione Granger blasted a hole through the living room floor of Xenophilius Lovegood's house in 1998 using this spell.",
-      "etymology": "The incantation, when non-capitalised, means \"to depress\" or \"depress\".",
-      "note": null
-    },
-    
-    {
-      "id": 124,
-      "name": "Glacius",
-      "other_name": "Freezing Spell",
-      "pronunciation": "GLAY-see-us",
-      "spell_type": "Charm",
-      "description": "Freezes the target with icy-cold air.",
-      "mention": null,
-      "etymology": "From Latin glacies, which means \"ice\".",
-      "note": "Not to be confused with the Freezing Charm, which merely immobilises things."
-    },
-    {
-      "id": 28,
-      "name": "Badgering",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Transfiguration",
-      "description": "Turns things into badgers",
-      "mention": null,
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 227,
-      "name": "Quietus",
-      "other_name": "Quietening Charm",
-      "pronunciation": "KWIY-uh-tus",
-      "spell_type": "Charm",
-      "description": "Makes a target sound quieter. It is the counter-charm to the Amplifying Charm.",
-      "mention": "Used in 1994 by Ludo Bagman.",
-      "etymology": "Latin quietus, \"calm\" or \"quiet\".",
-      "note": null
-    },
-    {
-      "id": 19,
-      "name": "Arania Exumai",
-      "other_name": "Spider repelling spell",
-      "pronunciation": "ah-RAHN-ee-a EKS-su-may",
-      "spell_type": "Charm",
-      "description": "Drives away spiders, including Acromantulas.",
-      "mention": "Jacob's sibling used this spell to repel an Acromantula that guarded the Forest Vault in the Forbidden Forest.",
-      "etymology": null,
       "note": null
     },
     {
@@ -12647,128 +12459,31 @@ export default {
       "etymology": null,
       "note": null
     },
-    {
-      "id": 165,
-      "name": "Knee-reversal hex",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Hex",
-      "description": "Puts knees on backward.",
-      "mention": null,
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 199,
-      "name": "Obscuro",
-      "other_name": null,
-      "pronunciation": "ob-SKYUR-oh",
-      "spell_type": "Conjuration",
-      "description": "Blindfolds the target.",
-      "mention": "Used by Hermione Granger in 1997 to obstruct the portrait of Phineas Nigellus's view of their location.",
-      "etymology": "English word obscure, meaning \"unclear\" or \"unnoticeable\".",
-      "note": "This spell might only affect characters in paintings; there are no other references to this spell."
-    },
-    {
-      "id": 169,
-      "name": "Leek Jinx",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Jinx",
-      "description": "Makes leeks sprout out of the target's ears.",
-      "mention": "Used by a fighting Gryffindor fourth year and sixth year Slytherin before a Quidditch match in 1992.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 106,
-      "name": "Finestra",
-      "other_name": "Finestra spell",
-      "pronunciation": "fi-NESS-tra",
-      "spell_type": "Charm",
-      "description": "Shatters glass.",
-      "mention": "On 6 December 1926, Newt Scamander shattered the front window of the Voclain & Co. jewellery store in New York using this spell to try and recapture his escaped niffler when he saw it loose inside the store stealing things.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 304,
-      "name": "Washing up spell",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Charm",
-      "description": "Enchanted dirty dishes to wash themselves.",
-      "mention": "It was used non-verbally by Molly Weasley after preparing breakfast for Harry Potter upon his arrival to The Burrow on 4 August, 1992.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 294,
-      "name": "Ventus Duo",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Jinx",
-      "description": "A stronger version of the Ventus Jinx",
-      "mention": null,
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 161,
-      "name": "Intruder Charm",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Charm",
-      "description": "Detects intruders and sounds an alarm.",
-      "mention": "Horace Slughorn used it on a Muggle-owned house he stayed in temporarily in 1996, but did not hear it go off when Albus Dumbledore and Harry Potter arrived, as he was in the bath.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 216,
-      "name": "Point Me",
-      "other_name": "Four-Point Spell",
-      "pronunciation": null,
-      "spell_type": "Spell",
-      "description": "Makes the caster's wand point due north.",
-      "mention": "Hermione Granger taught it to Harry Potter, who used it during the Triwizard Tournament, particularly to navigate the hedge maze during the Third Task.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 289,
-      "name": "Unbreakable Charm",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Charm",
-      "description": "Makes objects unbreakable.",
-      "mention": "Hermione Granger used the charm on a jar, in which she put Rita Skeeter in her Animagus beetle form to prevent her from transforming back into a human.",
-      "etymology": null,
-      "note": null
-    },
-    {
-      "id": 263,
-      "name": "Specialis Revelio",
-      "other_name": null,
-      "pronunciation": "spe-see-AL-is reh-VEL-ee-oh",
-      "spell_type": "Charm",
-      "description": "Reveals spells cast on objects or potions.",
-      "mention": "Used by Hermione Granger to find out more of Harry's Advanced Potion-Making book in 1996. Used by Ernie Macmillan to find out ingredients of a potion.",
-      "etymology": "Latin specialis, \"particular;individual\" and revelare (present tense revelo), \"unveil\".",
-      "note": "In 1994, Severus Snape cast a similar spell, but with different words (\"Reveal your secrets!\"), on the Marauder's Map, though he may have just been saying those words as he cast the spell non-verbally."
-    },
-    {
-      "id": 83,
-      "name": "Ear-shrivelling Curse",
-      "other_name": null,
-      "pronunciation": null,
-      "spell_type": "Curse",
-      "description": "Causes the target's ears to shrivel up.",
-      "mention": "Sometime between 1989 and 1994, Bill Weasley's pen-friend sent him a hat with this curse on it.",
-      "etymology": null,
-      "note": null
-    },
-//-------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
       "id": 1,
       "name": "Aberto",
