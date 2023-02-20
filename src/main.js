@@ -28,8 +28,8 @@ function deleteCards() {
 
 function factoryCard(c) {
   const card = document.createElement('div');
-  const cardInner = document.createElement('div')
-  const cardFront = document.createElement('div')
+  const cardInner = document.createElement('div');
+  const cardFront = document.createElement('div');
   const cardBack = document.createElement('div');
 
   const name = document.createElement('h2');
@@ -64,4 +64,14 @@ function factoryCard(c) {
   cardInner.className = "card-inner";
   cardFront.className = "card-front"
   cardBack.className = "card-back"
+}
+
+function factoryCardForSpells(c) {
+  const cardSpell = document.createElement('div');
+
+  const nameSpell = document.createElement('h2');
+  const spellType = Document.createElement('h5');
+  const spellDescripcion = Document.createElement('h5');
+
+  
 }

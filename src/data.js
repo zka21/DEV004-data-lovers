@@ -7,6 +7,11 @@ export const allCharacters = () => {
   return dataHP.characters.slice(0,15)
 }
 
+// export const allSpells  = () => {
+//   return dataHP.spells.slice(0,30)
+// }
+
+
 export const filterCharactersByHouses = (house, arraycharacters) => {
   /**
    * Objetivo: Filtrar los personajes que pertenezcan a cierta casa(g, h, s, r)
