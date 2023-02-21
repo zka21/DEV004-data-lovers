@@ -1,5 +1,3 @@
-
-
 // estas funciones son de ejemplo
 import dataHP from './data/harrypotter/data.js'
 export const allCharacters = () => {
