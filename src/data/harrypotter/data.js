@@ -92,6 +92,36 @@ export default {
         "Chudley Cannons"
       ],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+    },{
+      "id": 254,
+      "name": "Neville Longbottom",
+      "img": "https://depor.com/resizer/kJCYv4GdeCC9fxcV2rGp0muzPOw=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/H6NR4GE24VBFLCUAIFYSJGCRRQ.jpg",
+      "birth": "30 July, 1980",
+      "death": null,
+      "species": "Human",
+      "ancestry": "Pure-blood",
+      "gender": "Male",
+      "hair_color": "Blond",
+      "eye_color": null,
+      "wand": "Father's wand (formerly)",
+      "patronus": "Non-corporeal",
+      "house": "Gryffindor",
+      "associated_groups": [
+        "Longbottom family",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Gryffindor",
+        "Herbology department",
+        "Slug Club (briefly)",
+        "Albus Dumbledore",
+        "Order of the Phoenix",
+        "Harry Potter",
+        "Dumbledore's Army",
+        "British Ministry of Magic",
+        "Auror Department (formerly)",
+        "S.P.E.W.",
+        "Abbott family"
+      ],
+      "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
     {
       "id": 743,
@@ -121,6 +151,103 @@ export default {
         "Daily Prophet"
       ],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
+      "id": 625,
+      "name": "Luna Lovegood",
+      "img": "https://images.ctfassets.net/usf1vwtuqyxm/Mam68Vfou2OO6kqEcyW8W/41657e4dbb7d42d2cab591276105bcc1/LunaLovegood_WB_F6_LunaLovegoodInQuibblerSpecsOnHogwartsExpress_Still_080615_Port.jpg?w=1200&fit=fill&f=top",
+      "birth": "13 February, 1981",
+      "death": null,
+      "species": "Human",
+      "ancestry": "Pure-blood or Half-blood",
+      "gender": "Female",
+      "hair_color": "Dirty-blonde",
+      "eye_color": "Pale silvery",
+      "wand": "Unknown 1st wand",
+      "patronus": "Hare",
+      "house": "Ravenclaw",
+      "associated_groups": [
+        "Lovegood family",
+        "Scamander family",
+        "Hogwarts School of Witchcraft and Wizardry ",
+        "Ravenclaw",
+        "Dumbledore's Army",
+        "Order of the Phoenix",
+        "The Quibbler"
+      ],
+      "books_featured_in": [4, 5, 6, 7]
+    },
+    {
+      "id": 533,
+      "name": "Cho Chang",
+      "img": "https://i.pinimg.com/originals/43/c5/1b/43c51b1a9c443e3c7386e8c501dc1896.jpg",
+      "birth": "between 1 September 1978 and 31 August 1979",
+      "death": null,
+      "species": "Human",
+      "ancestry": "Pure-blood or half-blood",
+      "gender": "Female",
+      "hair_color": "Black",
+      "eye_color": "Dark",
+      "wand": "Unknown length, wood and core",
+      "patronus": "Swan",
+      "house": "Ravenclaw",
+      "associated_groups": [
+        "Chang family",
+        "Dumbledore's Army",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Ravenclaw",
+        "Ravenclaw Quidditch team"
+      ],
+      "books_featured_in": [3, 4, 5, 6, 7]
+    },
+    {
+      "id": 740,
+      "name": "Myrtle Warren",
+      "img": "https://i.pinimg.com/originals/f1/c4/99/f1c49911032220ac84f09346d4241c69.jpg",
+      "birth": "Between 14 June, 1928 and 13 June, 1929",
+      "death": "13 June, 1943 (aged 14)",
+      "species": "Human (formerly)",
+      "ancestry": "Muggle-born",
+      "gender": "Female",
+      "hair_color": null,
+      "eye_color": null,
+      "wand": null,
+      "patronus": null,
+      "house": "Ravenclaw",
+      "associated_groups": [
+        "Warren family",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Ravenclaw",
+        "Harry Potter",
+        "Draco Malfoy",
+        "Albus Potter",
+        "Scorpius Malfoy"
+      ],
+      "books_featured_in": [2, 4, 6]
+    },
+    {
+      "id": 117,
+      "name": "Cedric Diggory",
+      "img": "https://www.ecured.cu/images/thumb/c/c5/Cedric.jpg/390px-Cedric.jpg",
+      "birth": "between 1 September and 30 October 1977",
+      "death": "24 June, 1995 (aged 17)",
+      "species": "Human",
+      "ancestry": "Pure-blood (possibly)",
+      "gender": "Male",
+      "hair_color": "Dark",
+      "eye_color": "Grey",
+      "wand": "12¼\", Ash, unicorn hair",
+      "patronus": null,
+      "house": "Hufflepuff",
+      "associated_groups": [
+        "Diggory family",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Hufflepuff",
+        "Hufflepuff Quidditch team",
+        "Circle of Khanna",
+        "Death Eaters (alternate timeline)"
+      ],
+      "books_featured_in": [3, 4, 5, 6, 7]
     },
     {
       "id": 267,
@@ -12582,7 +12709,6 @@ export default {
       "etymology": "Cantare is Latin for \"sing\".",
       "note": null
     },
-
     {
       "id": 39,
       "name": "Bridge-conjuring spell",
@@ -12725,8 +12851,7 @@ export default {
       "mention": "Hermione Granger blasted a hole through the living room floor of Xenophilius Lovegood's house in 1998 using this spell.",
       "etymology": "The incantation, when non-capitalised, means \"to depress\" or \"depress\".",
       "note": null
-    },
-    
+    }, 
     {
       "id": 124,
       "name": "Glacius",
@@ -12804,9 +12929,6 @@ export default {
       "etymology": "English word obscure, meaning \"unclear\" or \"unnoticeable\".",
       "note": "This spell might only affect characters in paintings; there are no other references to this spell."
     },
-
-
-
     {
       "id": 169,
       "name": "Leek Jinx",
@@ -12851,8 +12973,6 @@ export default {
       "etymology": null,
       "note": null
     },
-
-
     {
       "id": 161,
       "name": "Intruder Charm",
@@ -12864,8 +12984,6 @@ export default {
       "etymology": null,
       "note": null
     },
-    
-    
     {
       "id": 216,
       "name": "Point Me",
@@ -12899,8 +13017,6 @@ export default {
       "etymology": "Latin specialis, \"particular;individual\" and revelare (present tense revelo), \"unveil\".",
       "note": "In 1994, Severus Snape cast a similar spell, but with different words (\"Reveal your secrets!\"), on the Marauder's Map, though he may have just been saying those words as he cast the spell non-verbally."
     },
-       
-    
     {
       "id": 83,
       "name": "Ear-shrivelling Curse",
@@ -12912,6 +13028,7 @@ export default {
       "etymology": null,
       "note": null
     },
+
     
     
    
@@ -12983,6 +13100,8 @@ export default {
     
     
     
+
+//------------------------------------------------------------------------------------
     {
       "id": 1,
       "name": "Aberto",

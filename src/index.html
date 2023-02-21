@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="descripción" content="Esta pagina te mostrará datos de la saga de Harry Potter" />
-  <meta name="robots" content="index,follow" />
-  <title>Data Lovers Harry Potter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <div id="root"></div>
-  <header>
-    <h1 class="title"> * Mundo Howards *</h1>
-    <!-- <img src="imagenes/pngegg (4).png" alt="Descripción de la imagen"> -->
-  </header>
-  <nav>
-    <ul>
-      <li><a href="">character by home</a></li>
-      <li><a href="">spell</a></li>
-      <li><a href=""> books</a></li>
-    </ul>
-    <div class="hide">
-      <i class="fa fa-bars" aria-hidden="true"></i> Menu
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="descripción"
+      content="Esta pagina te mostrará datos de la saga de Harry Potter"
+    />
+    <meta name="robots" content="index,follow" />
+    <title>Data Lovers Harry Potter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Mundo Howards</h1>
+    </header>
+      <nav>
+        <ul>
+          <li><a id="characterByHouse" href="">character by house</a></li>
+          <li><a id="spell" href="">spell</a></li>
+          <li><a id = "books" href=""> books</a></li>
+        </ul>
+        <div class="hide">
+          <i class="fa fa-bars" aria-hidden="true"></i> Menu
+        </div>
+      </nav>
+    <div class="selectorTag">
+      <label for="fourHouses"></label>
+      <select name="fourHouses" id="selectForHouses" class="selectForHouses">
+        <option value="all">All</option>
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Slytherin">Slytherin</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+      </select>
     </div>
-  </nav>
-  <div class="selectorTag">
-    <label for="fourHouses"></label>
-    <select name="fourHouses" id="selectForHouses" class="selectForHouses">
-      <option value="all">All</option>
-      <option value="Gryffindor">Gryffindor</option>
-      <option value="Slytherin">Slytherin</option>
-      <option value="Hufflepuff">Hufflepuff</option>
-      <option value="Ravenclaw">Ravenclaw</option>
-    </select>
-  </div>
-  
-  <div id="container-cards"></div>
-  <footer>
-    <div class="container3">
-      <h5>Katherine Zambrano - Zhaida Cazasola </h5>
-      <br />
-      <h5>LABORATORIA</h5>
-    </div>
-  </footer>
-  <script src="main.js" type="module"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script>
-    $(".hide").on('click', function() {
-      $("nav ul").toggle('slow');
-    })
-  </script>  
-</body>
-
+    <div id="container-cards"></div>
+    <!-- <div id="container-cards-Spells"></div> -->
+    <footer>
+        <h6>Katherine Zambrano S.- Zhaida Cazasola C.</h6>
+        <br />
+        <h6>LABORATORIA</h6>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(".hide").on('click', function() {
+        $("nav ul").toggle('slow');
+      })
+    </script>  
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

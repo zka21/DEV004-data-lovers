@@ -2,6 +2,7 @@ import { allCharacters, filterCharactersByHouses } from "./data.js";
 
 const containerCards = document.getElementById("container-cards");
 const selectForHouses = document.getElementById("selectForHouses");
+// const containerCardsSpells = document.getElementById("container-cards-Spells")
 const characters = allCharacters();
 
 characters.forEach((character) => {
@@ -9,11 +10,9 @@ characters.forEach((character) => {
 });
 
 selectForHouses.addEventListener("change", (event) => {
-  deleteCards();
-  const charactersFiltered = filterCharactersByHouses(
-    event.target.value,
-    allCharacters()
-  );
+
+  deleteCards()
+  const charactersFiltered = filterCharactersByHouses(event.target.value, allCharacters());
 
   charactersFiltered.forEach((character) => {
     factoryCard(character);
@@ -23,7 +22,7 @@ selectForHouses.addEventListener("change", (event) => {
 function deleteCards() {
   let child = containerCards.lastElementChild;
 
-  while (child) {
+  while(child) {
     containerCards.removeChild(child);
     child = containerCards.lastElementChild;
   }
@@ -68,3 +67,17 @@ function factoryCard(c) {
   cardFront.className = "card-front";
   cardBack.className = "card-back";
 }
+
+// function factoryCardForSpells(s) {
+//   const cardSpell = document.createElement('div');
+
+//   const nameSpell = document.createElement('h2');
+//   const spellType = Document.createElement('h5');
+//   const spellDescription = Document.createElement('h5');
+
+//   nameSpell = s.name;
+//   spellType = s.spell_type;
+//   spellDescription = s.description;
+
+//   containerCardsSpells.appendChild(cardSpell);
+// }
