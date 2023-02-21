@@ -4,7 +4,7 @@ import dataHP from './data/harrypotter/data.js'
 
 
 export const allCharacters = () => {
-  return dataHP.characters.slice(0,15)
+  return dataHP.characters.slice(0,20)
 }
 
 // export const allSpells  = () => {
@@ -33,7 +33,7 @@ export const filterCharactersByHouses = (house, arraycharacters) => {
       characterFiltered.push(character)
     }
   });
-
+  
   return characterFiltered;
 }
 

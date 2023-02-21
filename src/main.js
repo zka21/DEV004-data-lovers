@@ -2,6 +2,7 @@ import { allCharacters, filterCharactersByHouses } from "./data.js";
 
 const containerCards = document.getElementById("container-cards");
 const selectForHouses = document.getElementById("selectForHouses");
+// const containerCardsSpells = document.getElementById("container-cards-Spells")
 const characters = allCharacters();
 
 characters.forEach((character) => {
@@ -66,12 +67,16 @@ function factoryCard(c) {
   cardBack.className = "card-back"
 }
 
-function factoryCardForSpells(c) {
-  const cardSpell = document.createElement('div');
+// function factoryCardForSpells(s) {
+//   const cardSpell = document.createElement('div');
 
-  const nameSpell = document.createElement('h2');
-  const spellType = Document.createElement('h5');
-  const spellDescripcion = Document.createElement('h5');
+//   const nameSpell = document.createElement('h2');
+//   const spellType = Document.createElement('h5');
+//   const spellDescription = Document.createElement('h5');
 
-  
-}
+//   nameSpell = s.name;
+//   spellType = s.spell_type;
+//   spellDescription = s.description;
+
+//   containerCardsSpells.appendChild(cardSpell);
+// }

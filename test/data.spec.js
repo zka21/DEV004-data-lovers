@@ -1,11 +1,18 @@
 import { filterCharactersByHouses } from '../src/data.js';
 
-const characterofhouse = [{
-  "house": "Gryffindor",
-},
-{
-  "house": "Slytherin",
-}
+const characterofhouse = [
+  {
+    "house": "Gryffindor",
+  },
+  {
+    "house": "Slytherin",
+  },
+  {
+    "house": "Hufflepuff",
+  },
+  {
+    "house": "Ravenclaw",
+  }
 ]
 
 //const spells = [
@@ -29,6 +36,14 @@ describe('filterCharactersByHouses', () => {
 
   it('deberia retornar un array con personajes filtrados por casa  `[Slytherin, Slytherin]`', () => {
     expect(filterCharactersByHouses("Slytherin", characterofhouse)).toEqual([{ "house": "Slytherin"}]);
+  });
+
+  it('deberia retornar un array con personajes filtrados por casa  `[Hufflepuff, Hufflepuff]`', () => {
+    expect(filterCharactersByHouses("Hufflepuff", characterofhouse)).toEqual([{ "house": "Hufflepuff"}]);
+  });
+
+  it('deberia retornar un array con personajes filtrados por casa  `[Ravenclaw, Ravenclaw]`', () => {
+    expect(filterCharactersByHouses("Ravenclaw", characterofhouse)).toEqual([{ "house": "Ravenclaw"}]);
   });
 });
 
