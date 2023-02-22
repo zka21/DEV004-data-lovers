@@ -75,8 +75,6 @@ function factoryCard(c) {
   cardBack.className = "card-back"
 }
 
-// esto si va lo otro ño
-
 function factoryCardForSpells(s) {
   const cardSpell = document.createElement('div');
   // const cardFrontSpell = document.createElement('div');
