@@ -262,7 +262,7 @@ export default {
       "eye_color": "Grey",
       "wand": "10\", Hawthorn, unicorn hair (formerly)",
       "patronus": "None",
-      "house": "Slytherin",
+      "house": "Malfoy family",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -438,7 +438,7 @@ export default {
       "eye_color": "Grey",
       "wand": "Elm and dragon heartstring (formerly)",
       "patronus": "None",
-      "house": "Slytherin",
+      "house": "Malfoy family",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -499,10 +499,41 @@ export default {
       "eye_color": null,
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
-      "house": "Slytherin",
+      "house": "House of Black",
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },
+    
+    
+    {
+      "id": 719,
+      "img":"https://resize-elle.ladmedia.fr/rcrop/638,,forcex/img/var/plain_site/storage/images/loisirs/cinema/dossiers/acteur-harry-potter/nymphadora-tonks/57107963-1-fre-FR/Nymphadora-Tonks.jpg",
+      "name": "Nymphadora Tonks",
+      "birth": "between 1 September 1972 and 31 August 1973",
+      "death": "2 May, 1998 (aged 24/25)",
+      "species": "Human (Metamorphmagus)",
+      "ancestry": "Half-blood",
+      "gender": "Female",
+      "hair_color": "Variable (biologically light brown))",
+      "eye_color": "Variable (Dark)",
+      "wand": "Unknown length, wood and core",
+      "patronus": "Jack Rabbit (pre 1995)",
+      "house": "Hufflepuff",
+      "associated_groups": [
+        "Tonks family",
+        "Lupin family",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Hufflepuff",
+        "Circle of Khanna",
+        "British Ministry of Magic",
+        "Auror Department",
+        "Order of the Phoenix",
+        "Advance Guard"
+      ],
+      "books_featured_in": [5, 6, 7]
+    },
+
+
     
 //----------------------------------------------
     {
@@ -10276,7 +10307,7 @@ export default {
       "eye_color": null,
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
-      "house": "Slytherin",
+      "house": "House of Black",
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },
@@ -12717,7 +12748,7 @@ export default {
       "mention": "Hermione Granger blasted a hole through the living room floor of Xenophilius Lovegood's house in 1998 using this spell.",
       "etymology": "The incantation, when non-capitalised, means \"to depress\" or \"depress\".",
       "note": null
-    },
+    }, 
     {
       "id": 124,
       "name": "Glacius",
@@ -12894,7 +12925,80 @@ export default {
       "etymology": null,
       "note": null
     },
-//-------------------------------------------------------------------------------------
+
+    
+    
+   
+   
+//............................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+
+//------------------------------------------------------------------------------------
     {
       "id": 1,
       "name": "Aberto",

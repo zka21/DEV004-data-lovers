@@ -37,6 +37,7 @@ characters.forEach((character) => {
 });
 
 selectForHouses.addEventListener("change", (event) => {
+
   deleteCards()
   const charactersFiltered = filterCharactersByHouses(event.target.value, allCharacters());
 
@@ -55,17 +56,17 @@ function deleteCards() {
 }
 
 function factoryCard(c) {
-  const card = document.createElement('div');
-  const cardInner = document.createElement('div');
-  const cardFront = document.createElement('div');
-  const cardBack = document.createElement('div');
+  const card = document.createElement("div");
+  const cardInner = document.createElement("div");
+  const cardFront = document.createElement("div");
+  const cardBack = document.createElement("div");
 
-  const name = document.createElement('h2');
-  const nameBack = document.createElement('h3')
-  const photo = document.createElement('img');
-  const birth = document.createElement('p');
-  const gender = document.createElement('p');
-  const house = document.createElement('p');
+  const name = document.createElement("h2");
+  const nameBack = document.createElement("h3");
+  const photo = document.createElement("img");
+  const birth = document.createElement("p");
+  const gender = document.createElement("p");
+  const house = document.createElement("p");
 
   name.innerHTML = c.name;
   nameBack.innerHTML = c.name;
@@ -90,8 +91,8 @@ function factoryCard(c) {
 
   card.className = "card";
   cardInner.className = "card-inner";
-  cardFront.className = "card-front"
-  cardBack.className = "card-back"
+  cardFront.className = "card-front";
+  cardBack.className = "card-back";
 }
 
 function factoryCardForSpells(s) {
