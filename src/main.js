@@ -1,9 +1,17 @@
-import { allCharacters, filterCharactersByHouses } from "./data.js";
+import { allCharacters, allSpells, filterCharactersByHouses } from "./data.js";
 
 const containerCards = document.getElementById("container-cards");
 const selectForHouses = document.getElementById("selectForHouses");
-// const containerCardsSpells = document.getElementById("container-cards-Spells")
+const containerCardsSpells = document.getElementById("container-cards-Spells");
+const containerBooks = document.getElementById("container-books");
 const characters = allCharacters();
+const spells = allSpells();
+
+
+spells.forEach((spell) => {
+  factoryCardForSpells(spell);
+})
+
 
 characters.forEach((character) => {
   factoryCard(character);
@@ -68,16 +76,24 @@ function factoryCard(c) {
   cardBack.className = "card-back";
 }
 
-// function factoryCardForSpells(s) {
-//   const cardSpell = document.createElement('div');
+function factoryCardForSpells(s) {
+  const cardSpell = document.createElement('div');
+  // const cardFrontSpell = document.createElement('div');
 
-//   const nameSpell = document.createElement('h2');
-//   const spellType = Document.createElement('h5');
-//   const spellDescription = Document.createElement('h5');
+  const nameSpell = document.createElement('h2');
+  const spellType = document.createElement('h5');
+  const spellDescription = document.createElement('h5');
 
-//   nameSpell = s.name;
-//   spellType = s.spell_type;
-//   spellDescription = s.description;
+  nameSpell.innerHTML  = s.name;
+  spellType.innerHTML = s.spell_type;
+  spellDescription.innerHTML = s.description;
 
-//   containerCardsSpells.appendChild(cardSpell);
-// }
+  containerCardsSpells.appendChild(cardSpell);
+
+  // cardSpell.appendChild(cardFrontSpell);
+  cardSpell.appendChild(nameSpell);
+  cardSpell.appendChild(spellType);
+  cardSpell.appendChild(spellDescription);
+
+  cardSpell.className = "cardSpell";
+}
