@@ -36,9 +36,11 @@ export const filterCharactersByHouses = (house, arraycharacters) => {
   return characterFiltered;
 }
 
-const ordenarAzZa = ( allSpell) => {
+export const ordenarAzZa = ( allSpell, arraySpells) => {
   const spells =  allSpells()
-  spells.sort
+  const az = [];
+
+  if(allSpell)
 
 }
 
