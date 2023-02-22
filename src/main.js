@@ -2,6 +2,7 @@ import { allCharacters, allSpells, filterCharactersByHouses } from "./data.js";
 
 const containerCards = document.getElementById("container-cards");
 const selectForHouses = document.getElementById("selectForHouses");
+const selectForSpells = document.getElementById("selectForSpells");
 const containerCardsSpells = document.getElementById("container-cards-Spells");
 const containerBooks = document.getElementById("container-books");
 const characters = allCharacters();
@@ -11,6 +12,24 @@ const spells = allSpells();
 spells.forEach((spell) => {
   factoryCardForSpells(spell);
 })
+selectForSpells.addEventListener("change", (event) => {
+  deleteCardsForSpells()
+  const sortSpells = ordenarAzZa(event.target.value, allSpells());
+
+  sortSpells.forEach((character) => {
+    factoryCard(character);
+  });
+});
+
+function deleteCardsForSpells() {
+  let child = containerCardsSpells.lastElementChild;
+
+  while(child) {
+    containerCardsSpells.removeChild(child);
+    child = containerCardsSpells.lastElementChild;
+  }
+}
+//--------------------------------
 
 
 characters.forEach((character) => {
