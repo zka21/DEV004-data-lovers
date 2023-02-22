@@ -27,8 +27,7 @@ header {
   padding: 10px;
   height: 100px;
   z-index: 1;
-  
-}
+  }
 
 .container {
     display: flex;
@@ -191,7 +190,7 @@ body {
   flex-direction: column;
   gap: 10px;
   font-family:"HarryPotterFont";
-  font-size: 20px;
+  font-size: 15px;
 
 }
 
@@ -208,7 +207,7 @@ body {
   transform: rotateY(180deg);
   background-image: url("https://i.pinimg.com/236x/ea/a9/7e/eaa97e0b1ea29733371c46ac60059eb6.jpg");
   font-family: "HarryPotterFont";
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .card-front img {
@@ -223,8 +222,8 @@ footer {
   color: white;
   padding: 18px;
   text-align: center;
-  font-size: 23px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0px;
