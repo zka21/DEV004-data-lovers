@@ -1,3 +1,4 @@
+
 //import { example, anotherExample } from '../src/data.js';
 
 import { filterCharactersByHouses } from '../src/data.js';
@@ -14,6 +15,7 @@ const characterofhouse = [{
   "house": "Ravenclaw"
 }
 ]
+
 //const spells = [
 //{
 //  "descripcion":"este hechizo sirve para esto y esto"
@@ -42,3 +44,4 @@ describe('filterCharactersByHouses', () => {
     expect(filterCharactersByHouses("Ravenclaw", characterofhouse)).toEqual([{ "house": "Ravenclaw"}]);
   });
 });
+
