@@ -1,4 +1,3 @@
-// estas funciones son de ejemplo
 import dataHP from './data/harrypotter/data.js'
 
 
@@ -7,9 +6,9 @@ export const allCharacters = () => {
   return dataHP.characters.slice(0,20)
 }
 
-// export const allSpells  = () => {
-//   return dataHP.spells.slice(0,30)
-// }
+export const allSpells  = () => {
+  return dataHP.spells.slice(0,30)
+}
 
 
 export const filterCharactersByHouses = (house, arraycharacters) => {
@@ -37,7 +36,11 @@ export const filterCharactersByHouses = (house, arraycharacters) => {
   return characterFiltered;
 }
 
-// export const filterCharactersByName = (texto) => {
+const ordenarAzZa = ( allSpell) => {
+  const spells =  allSpells()
+  spells.sort
+
+}
 
 // }
 
