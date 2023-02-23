@@ -36,26 +36,30 @@ export const filterCharactersByHouses = (house, arraycharacters) => {
   return characterFiltered;
 }
 
-const ordenarAzZa = ( allSpell) => {
-  const spells =  allSpells()
-  spells.sort
+export const ordenarAzZa = ( spell, arrayspells) => {
+  const spells =  arrayspells.sort((a,b) => {
+    const nameA = a.name;
+    const nameB = b.name;
+    if (nameA < nameB) {
+      return -1;
+    } else {
+      return 1;
+    }
+  })
 
+  if (spell === "A-Z") {
+      return spells;
+    } else if (spell === "Z-A"){
+      return spells.reverse()
+    } else {
+      return allSpells();
+    }
+
+
+  // if (spell === "A-Z") {
+  //   return spells;
+  // } else {
+  //   return spells.reverse();
+  // }
+ 
 }
-
-// }
-
-// export const studentsByHouse = () => {
-
-// }
-
-// export const allPotions = ()  => {
-
-// }
-
-// export const filterPotionsByName = () => {
-
-// }
-
-// export const allSpells = () => {
-
-// }

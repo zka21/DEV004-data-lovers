@@ -1,4 +1,4 @@
-import { allCharacters, allSpells, filterCharactersByHouses } from "./data.js";
+import { allCharacters, allSpells, filterCharactersByHouses, ordenarAzZa} from "./data.js";
 
 const charactersDiv = document.getElementById("characters");
 const spellsDiv = document.getElementById("spells");
@@ -9,6 +9,7 @@ const containerCardsSpells = document.getElementById("container-cards-spells");
 const containerCardsBooks = document.getElementById("container-cards-books");
 
 const selectForHouses = document.getElementById("selectForHouses");
+const selectForSpells = document.getElementById("selectForSpells");
 
 const botonCharacters = document.getElementById("botonCharacters");
 const botonSpells = document.getElementById("botonSpells");
@@ -30,9 +31,28 @@ botonCharacters.addEventListener('click', () => { manejarContainers('c') });
 botonSpells.addEventListener('click', () => { manejarContainers('s') });
 botonBooks.addEventListener('click', () => { manejarContainers('b') });
 
-selectForHouses.addEventListener("change", (event) => {
+selectForSpells.addEventListener("change", (eventSpell) => {
+  deleteCardsForSpells()
+  const abcOrder= ordenarAzZa(eventSpell.target.value, allSpells());
+
+  abcOrder.forEach((spell) => {
+    factoryCardForSpells(spell);
+  });
+});
+
+function deleteCardsForSpells() {
+  let child = containerCardsSpells.lastElementChild;
+
+  while(child) {
+    containerCardsSpells.removeChild(child);
+    child = containerCardsSpells.lastElementChild;
+  }
+}
+
+
+selectForHouses.addEventListener("change", (eventCharacter) => {
   deleteCards()
-  const charactersFiltered = filterCharactersByHouses(event.target.value, allCharacters());
+  const charactersFiltered = filterCharactersByHouses(eventCharacter.target.value, allCharacters());
 
   charactersFiltered.forEach((character) => {
     factoryCardForCharacters(character);
@@ -110,7 +130,6 @@ function factoryCardForSpells(s) {
 }
 
 function manejarContainers(container) {
-  console.log(container)
   if(container === 'c') {
     charactersDiv.className = 'mostrar-dad-div'
     spellsDiv.className = "ocultar-dad-div"
