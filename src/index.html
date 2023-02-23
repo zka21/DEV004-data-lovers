@@ -12,40 +12,62 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body>
     <header>
       <h1 class="title"> * Mundo Howards *</h1>
     </header>
-      <nav>
-        <ul>
-          <li><a id="botonCharacterByHouse" href="">character by house</a></li>
-          <li><a id="botonSpell" href="">spell</a></li>
-          <li><a id = "botonBooks" href=""> books</a></li>
-        </ul>
-        <div class="hide">
-          <i class="fa fa-bars" aria-hidden="true"></i> Menu
-        </div>
-      </nav>
-    <div class="selectorTag">
-      <label for="fourHouses"></label>
-      <select name="fourHouses" id="selectForHouses" class="selectForHouses">
-        <option value="all">All</option>
-        <option value="Gryffindor">Gryffindor</option>
-        <option value="Slytherin">Slytherin</option>
-        <option value="Hufflepuff">Hufflepuff</option>
-        <option value="Ravenclaw">Ravenclaw</option>
-      </select>
-    </div>
+    <nav>
+      <ul>
+        <li><button id="botonCharacters">characters</button></li>
+        <li><button id="botonSpells">spells</button></li>
+        <li><button id="botonBooks">books</button></li>
+      </ul>
+      <div class="hide">
+        <i class="fa fa-bars" aria-hidden="true"></i> Menu
+      </div>
+    </nav>
+
     <div id="all-container">
-     <div id="container-cards"></div>
-     <div id="container-cards-Spells"></div>
-     <div id="container-books"></div>
+      
+      <div id="characters">
+        <div class="selectorTag">
+          <label for="fourHouses"></label>
+          <select name="fourHouses" id="selectForHouses" class="selectForHouses">
+            <option value="all">All</option>
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+          </select>
+        </div>
+        <div id="container-cards-characters"></div>
+      </div>
+
+      
+      <div id="spells">
+        <div class="selectorTag">
+          <label for="spells"></label>
+          <select name="spells" id="selectForSpells" class="selectForSpells">
+            <option value="all">All</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+          </select>
+        </div>
+        <div id="container-cards-spells"></div>
+      </div>
+
+      
+      <div id="books">
+        <div>Aqui selector de los books</div>
+        <div id="container-cards-books"><h1>Aqui van los libros</h1></div>
+      </div>
     </div>
+
     <footer>
-        <h6>Katherine Zambrano S.- Zhaida Cazasola C.</h6>
-        <br />
-        <h6>LABORATORIA</h6>
+        <h6>Katherine Zambrano S.- Zhaida Cazasola C. | LABORATORIA</h6>
     </footer>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
       $(".hide").on('click', function() {

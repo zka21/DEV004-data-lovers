@@ -1,41 +1,54 @@
 import { allCharacters, allSpells, filterCharactersByHouses } from "./data.js";
 
-const containerCards = document.getElementById("container-cards");
+const charactersDiv = document.getElementById("characters");
+const spellsDiv = document.getElementById("spells");
+const booksDiv = document.getElementById("books");
+
+const containerCardsCharacters = document.getElementById("container-cards-characters");
+const containerCardsSpells = document.getElementById("container-cards-spells");
+const containerCardsBooks = document.getElementById("container-cards-books");
+
 const selectForHouses = document.getElementById("selectForHouses");
-const containerCardsSpells = document.getElementById("container-cards-Spells");
-const containerBooks = document.getElementById("container-books");
+
+const botonCharacters = document.getElementById("botonCharacters");
+const botonSpells = document.getElementById("botonSpells");
+const botonBooks = document.getElementById("botonBooks");
+
 const characters = allCharacters();
 const spells = allSpells();
 
+characters.forEach((character) => {
+  factoryCardForCharacters(character);
+});
 
 spells.forEach((spell) => {
   factoryCardForSpells(spell);
 })
 
 
-characters.forEach((character) => {
-  factoryCard(character);
-});
+botonCharacters.addEventListener('click', () => { manejarContainers('c') });
+botonSpells.addEventListener('click', () => { manejarContainers('s') });
+botonBooks.addEventListener('click', () => { manejarContainers('b') });
 
 selectForHouses.addEventListener("change", (event) => {
   deleteCards()
   const charactersFiltered = filterCharactersByHouses(event.target.value, allCharacters());
 
   charactersFiltered.forEach((character) => {
-    factoryCard(character);
+    factoryCardForCharacters(character);
   });
 });
 
 function deleteCards() {
-  let child = containerCards.lastElementChild;
+  let child = containerCardsCharacters.lastElementChild;
 
   while(child) {
-    containerCards.removeChild(child);
-    child = containerCards.lastElementChild;
+    containerCardsCharacters.removeChild(child);
+    child = containerCardsCharacters.lastElementChild;
   }
 }
 
-function factoryCard(c) {
+function factoryCardForCharacters(c) {
   const card = document.createElement('div');
   const cardInner = document.createElement('div');
   const cardFront = document.createElement('div');
@@ -55,7 +68,7 @@ function factoryCard(c) {
   gender.innerHTML = c.gender;
   house.innerHTML = c.house;
 
-  containerCards.appendChild(card);
+  containerCardsCharacters.appendChild(card);
 
   card.appendChild(cardInner);
   cardInner.appendChild(cardFront);
@@ -89,10 +102,31 @@ function factoryCardForSpells(s) {
 
   containerCardsSpells.appendChild(cardSpell);
 
-  // cardSpell.appendChild(cardFrontSpell);
   cardSpell.appendChild(nameSpell);
   cardSpell.appendChild(spellType);
   cardSpell.appendChild(spellDescription);
 
   cardSpell.className = "cardSpell";
+}
+
+function manejarContainers(container) {
+  console.log(container)
+  if(container === 'c') {
+    charactersDiv.className = 'mostrar-dad-div'
+    spellsDiv.className = "ocultar-dad-div"
+    booksDiv.className = "ocultar-dad-div"
+  }
+
+  if(container === 's') {
+    charactersDiv.className = 'ocultar-dad-div'
+    spellsDiv.className = "mostrar-dad-div"
+    booksDiv.className = "ocultar-dad-div"
+
+  }
+
+  if(container === 'b') {
+    charactersDiv.className = 'ocultar-dad-div'
+    spellsDiv.className = "ocultar-dad-div"
+    booksDiv.className = "mostrar-dad-div"
+  }
 }
