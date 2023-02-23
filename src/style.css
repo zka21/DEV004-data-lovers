@@ -194,7 +194,7 @@ body {
 
 #spells {
   position: absolute;
-  visibility: hidden;
+  display: none;
   background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/6wHncCI874vqZMgEeZUOLk/3f086d8665f06dfa1f9f0af585850d47/UOR_DiagonAlley_VB.jpg");
   background-size: contain;
   padding-top: 8px;
@@ -263,10 +263,10 @@ footer {
 }
 
 .mostrar-dad-div {
-  visibility: visible !important;
+  display: block !important;
 }
 
 .ocultar-dad-div {
-  visibility: hidden !important;
+  display: none !important;
 }
 

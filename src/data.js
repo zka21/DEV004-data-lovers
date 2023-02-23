@@ -35,47 +35,27 @@ export const filterCharactersByHouses = (house, arraycharacters) => {
   
   return characterFiltered;
 }
-//funcion de la A -Z 
-export const orderSpellAZ = (spells) => {
-  const nuevoOrden = spells.sort(function (a,b){
 
-    return a.name.localeCompare(b.name);
-  });
+export const ordenarAzZa = ( spell, arrayspells) => {
+  const spells =  arrayspells.sort((a,b) => {
+    const nameA = a.name;
+    const nameB = b.name;
+    if (nameA < nameB) {
+      return -1;
+    } else {
+      return 1;
+    }
+  })
 
-  console.log(nuevoOrden);
-
-  return nuevoOrden;
+  if (spell === "A-Z") {
+    return spells;
+  } else if (spell === "Z-A"){
+    return spells.reverse()
+  } else {
+    return allSpells();
+  }
+ 
 }
 
-export const orderSpellZA = (spells) => {
-  const nuevoOrden1 = spells.sort(function (a,b){
-
-    return b.name.localeCompare(a.name);
-  });
-
-  console.log(nuevoOrden1);
-
-  return nuevoOrden1;
-}
 
 
-
-
-
-// }
-
-// export const studentsByHouse = () => {
-
-// }
-
-// export const allPotions = ()  => {
-
-// }
-
-// export const filterPotionsByName = () => {
-
-// }
-
-// export const allSpells = () => {
-
-// }
