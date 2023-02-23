@@ -48,18 +48,14 @@ export const ordenarAzZa = ( spell, arrayspells) => {
   })
 
   if (spell === "A-Z") {
-      return spells;
-    } else if (spell === "Z-A"){
-      return spells.reverse()
-    } else {
-      return allSpells();
-    }
-
-
-  // if (spell === "A-Z") {
-  //   return spells;
-  // } else {
-  //   return spells.reverse();
-  // }
+    return spells;
+  } else if (spell === "Z-A"){
+    return spells.reverse()
+  } else {
+    return allSpells();
+  }
  
 }
+
+
+
