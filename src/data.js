@@ -35,12 +35,32 @@ export const filterCharactersByHouses = (house, arraycharacters) => {
   
   return characterFiltered;
 }
+//funcion de la A -Z 
+export const orderSpellAZ = (spells) => {
+  const nuevoOrden = spells.sort(function (a,b){
 
-const ordenarAzZa = ( allSpell) => {
-  const spells =  allSpells()
-  spells.sort
+    return a.name.localeCompare(b.name);
+  });
 
+  console.log(nuevoOrden);
+
+  return nuevoOrden;
 }
+
+export const orderSpellZA = (spells) => {
+  const nuevoOrden1 = spells.sort(function (a,b){
+
+    return b.name.localeCompare(a.name);
+  });
+
+  console.log(nuevoOrden1);
+
+  return nuevoOrden1;
+}
+
+
+
+
 
 // }
 
