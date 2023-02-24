@@ -21,7 +21,7 @@
       <ul>
         <li><button id="botonCharacters">characters</button></li>
         <li><button id="botonSpells">spells</button></li>
-        <li><button id="botonBooks">birth</button></li>
+        <li><button id="botonBirth">birth</button></li>
       </ul>
       <div class="hide">
         <i class="fa fa-bars" aria-hidden="true"></i> Menu
@@ -59,15 +59,26 @@
 
       
       <div id="birth">
-        
-        <div>
-          <form>
-            <label for="birth">month:</label>
-            <input id="birth" >
-            <button type="submit" id="submit">Buscar</button>
-          </form>
+        <h3>Enter your month of birth</h3>
+        <div class="selectorTag">
+          <label for="months" style="color: white">Month: </label>
+          <select name="months" id="selectForMonths" class="selectForSpells">
+            <option value="Nothing">No selected</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
         </div>
-        <div id="container-cards-birth"><h1>Aqui van los cards del personaje</h1></div>
+        <div id="container-cards-birth"></div>
       </div>
     </div>
 

@@ -1,19 +1,20 @@
-import { allCharacters, allSpells, filterCharactersByHouses, ordenarAzZa} from "./data.js";
+import { allCharacters, allSpells, filterCharactersByHouses, ordenarAzZa, calculateCharactersByMonth} from "./data.js";
 
 const charactersDiv = document.getElementById("characters");
 const spellsDiv = document.getElementById("spells");
-const booksDiv = document.getElementById("books");
+const birthDiv = document.getElementById("birth");
 
 const containerCardsCharacters = document.getElementById("container-cards-characters");
 const containerCardsSpells = document.getElementById("container-cards-spells");
-const containerCardsBooks = document.getElementById("container-cards-books");
+const containerCardsBirth = document.getElementById("container-cards-birth");
 
 const selectForHouses = document.getElementById("selectForHouses");
 const selectForSpells = document.getElementById("selectForSpells");
+const selectForMonths = document.getElementById("selectForMonths");
 
 const botonCharacters = document.getElementById("botonCharacters");
 const botonSpells = document.getElementById("botonSpells");
-const botonBooks = document.getElementById("botonBooks");
+const botonBirth = document.getElementById("botonBirth");
 
 const characters = allCharacters();
 const spells = allSpells();
@@ -29,7 +30,7 @@ spells.forEach((spell) => {
 
 botonCharacters.addEventListener('click', () => { manejarContainers('c') });
 botonSpells.addEventListener('click', () => { manejarContainers('s') });
-botonBooks.addEventListener('click', () => { manejarContainers('b') });
+botonBirth.addEventListener('click', () => { manejarContainers('b') });
 
 selectForSpells.addEventListener("change", (eventSpell) => {
   deleteCardsForSpells()
@@ -40,6 +41,25 @@ selectForSpells.addEventListener("change", (eventSpell) => {
   });
 });
 
+selectForHouses.addEventListener("change", (eventCharacter) => {
+  deleteCardsForCharacters()
+  const charactersFiltered = filterCharactersByHouses(eventCharacter.target.value, allCharacters());
+  
+  charactersFiltered.forEach((character) => {
+    factoryCardForCharacters(character);
+  });
+});
+
+selectForMonths.addEventListener("change", (eventMonth) => {
+  deleteCardsForMonths();
+  const charactersCalculatedByMonth = calculateCharactersByMonth(eventMonth.target.value, allCharacters());
+
+  charactersCalculatedByMonth.forEach((character) => {
+    factoryCardForBirth(character);
+  })
+
+})
+
 function deleteCardsForSpells() {
   let child = containerCardsSpells.lastElementChild;
 
@@ -49,22 +69,21 @@ function deleteCardsForSpells() {
   }
 }
 
-
-selectForHouses.addEventListener("change", (eventCharacter) => {
-  deleteCards()
-  const charactersFiltered = filterCharactersByHouses(eventCharacter.target.value, allCharacters());
-
-  charactersFiltered.forEach((character) => {
-    factoryCardForCharacters(character);
-  });
-});
-
-function deleteCards() {
+function deleteCardsForCharacters() {
   let child = containerCardsCharacters.lastElementChild;
 
   while(child) {
     containerCardsCharacters.removeChild(child);
     child = containerCardsCharacters.lastElementChild;
+  }
+}
+
+function deleteCardsForMonths() {
+  let child = containerCardsBirth.lastElementChild;
+
+  while(child) {
+    containerCardsBirth.removeChild(child);
+    child = containerCardsBirth.lastElementChild;
   }
 }
 
@@ -110,13 +129,12 @@ function factoryCardForCharacters(c) {
 
 function factoryCardForSpells(s) {
   const cardSpell = document.createElement('div');
-  // const cardFrontSpell = document.createElement('div');
 
   const nameSpell = document.createElement('h2');
   const spellType = document.createElement('h5');
   const spellDescription = document.createElement('h5');
 
-  nameSpell.innerHTML  = s.name;
+  nameSpell.innerHTML = s.name;
   spellType.innerHTML = s.spell_type;
   spellDescription.innerHTML = s.description;
 
@@ -129,23 +147,40 @@ function factoryCardForSpells(s) {
   cardSpell.className = "cardSpell";
 }
 
+function factoryCardForBirth(c) {
+  const cardBirth = document.createElement('div');
+
+  const photo = document.createElement('img');
+  const name = document.createElement('h2');
+
+  photo.src = c.img;
+  name.innerHTML = c.name;
+
+  containerCardsBirth.appendChild(cardBirth);
+  
+  cardBirth.appendChild(photo);
+  cardBirth.appendChild(name);
+
+  cardBirth.className = "cardBirth";
+
+}
+
 function manejarContainers(container) {
   if(container === 'c') {
     charactersDiv.className = 'mostrar-dad-div'
     spellsDiv.className = "ocultar-dad-div"
-    booksDiv.className = "ocultar-dad-div"
+    birthDiv.className = "ocultar-dad-div"
   }
 
   if(container === 's') {
     charactersDiv.className = 'ocultar-dad-div'
     spellsDiv.className = "mostrar-dad-div"
-    booksDiv.className = "ocultar-dad-div"
-
+    birthDiv.className = "ocultar-dad-div"
   }
 
   if(container === 'b') {
     charactersDiv.className = 'ocultar-dad-div'
     spellsDiv.className = "ocultar-dad-div"
-    booksDiv.className = "mostrar-dad-div"
+    birthDiv.className = "mostrar-dad-div"
   }
 }

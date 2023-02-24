@@ -3,7 +3,7 @@ import dataHP from './data/harrypotter/data.js'
 
 
 export const allCharacters = () => {
-  return dataHP.characters.slice(0,20)
+  return dataHP.characters.slice(0,21)
 }
 
 export const allSpells  = () => {
@@ -55,6 +55,26 @@ export const ordenarAzZa = ( spell, arrayspells) => {
     return allSpells();
   }
  
+}
+
+export const calculateCharactersByMonth = (month, arrayCharacters) => {
+  let charactersCalculated = [];
+
+  arrayCharacters.forEach((c) => {
+    // obtener la segunda palabra que equivale al mes en el string
+    // let birth = "19 May, 1955"
+    // birth.split(' ')
+    // ['19', 'May,', '1955']
+    let monthOfBirth = c.birth.split(' ')[1];
+    // quitar la coma ultima
+    // 'May,' -> 'May'
+    monthOfBirth = monthOfBirth.slice(0,-1);
+
+    if(monthOfBirth === month) {
+      charactersCalculated.push(c);
+    } 
+  });
+  return charactersCalculated;
 }
 
 

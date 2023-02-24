@@ -231,14 +231,20 @@ body {
 
 #birth {
   position: absolute;
-  visibility: hidden;
+  display: none;
   background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/6wHncCI874vqZMgEeZUOLk/3f086d8665f06dfa1f9f0af585850d47/UOR_DiagonAlley_VB.jpg");
   background-size: contain;
   padding-top: 8px;
   width: 100%;
 }
 
-#container-cards-birth {
+#birth h3 {
+  color: white;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#container-cards-birth {  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -249,6 +255,32 @@ body {
   margin-bottom: 150px;
 }
 
+.cardBirth {
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  color: black;
+  width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  perspective: 1000px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://1.bp.blogspot.com/-i0kQg-MGbJw/WFBCr95IBeI/AAAAAAAAWRI/M4OJF28IggwHxl486QCw7dkX7x9SpHAYgCLcB/s1600/4%2Bcasas%2Bwallpaper_01%2B%252810%2529.jpg");
+  border: 3px solid gold;
+}
+
+.cardBirth img {
+  width: 100%;
+  flex-grow: 1;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 footer {
   background-color: #140e4fd7;
   color: #fec012;
