@@ -229,7 +229,7 @@ body {
   font-size: 15px;
 }
 
-#books {
+#birth {
   position: absolute;
   visibility: hidden;
   background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/6wHncCI874vqZMgEeZUOLk/3f086d8665f06dfa1f9f0af585850d47/UOR_DiagonAlley_VB.jpg");
@@ -238,7 +238,7 @@ body {
   width: 100%;
 }
 
-#container-cards-books {
+#container-cards-birth {
   width: 100%;
   display: flex;
   justify-content: center;
