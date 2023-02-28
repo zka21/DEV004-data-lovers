@@ -58,7 +58,7 @@ export const ordenarAzZa = ( spell, arrayspells) => {
 }
 
 export const calculateCharactersByMonth = (month, arrayCharacters) => {
-  let charactersCalculated = [];
+  const charactersCalculated = [];
 
   arrayCharacters.forEach((c) => {
     // obtener la segunda palabra que equivale al mes en el string
@@ -75,6 +75,7 @@ export const calculateCharactersByMonth = (month, arrayCharacters) => {
     } 
   });
   return charactersCalculated;
+ 
 }
 
 
